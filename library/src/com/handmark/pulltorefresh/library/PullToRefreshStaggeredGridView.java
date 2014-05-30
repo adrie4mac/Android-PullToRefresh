@@ -7,6 +7,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.BaseAdapter;
+import android.widget.AdapterView.OnItemClickListener;
 import com.handmark.pulltorefresh.library.R;
 
 public class PullToRefreshStaggeredGridView extends PullToRefreshBase<StaggeredGridView> {
@@ -64,6 +65,10 @@ public class PullToRefreshStaggeredGridView extends PullToRefreshBase<StaggeredG
         mRefreshableView.setAdapter(adapter);
     }
 
+    public void setOnItemClickListener(StaggeredGridView.OnItemClickListener listener) {
+		mRefreshableView.setOnItemClickListener(listener);
+	}
+    
     @TargetApi(9)
     final class InternalStaggeredGridViewSDK9 extends StaggeredGridView {
 

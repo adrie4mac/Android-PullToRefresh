@@ -2633,6 +2633,9 @@ public class StaggeredGridView extends ViewGroup {
         mOnItemClickListener = listener;
     }
 
+//    public void setOnItemClickListener(android.widget.AdapterView.OnItemClickListener listener) {
+//        mOnItemClickListener = listener;
+//    }
     /**
      * @return The callback to be invoked with an item in this AdapterView has
      *         been clicked, or null id no callback has been set.
